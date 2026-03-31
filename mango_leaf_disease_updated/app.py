@@ -4,12 +4,18 @@ import numpy as np
 import tensorflow as tf
 import plotly.graph_objects as go
 import base64
+from keras.utils import custom_object_scope
+
 # -----------------------------
 # Load the trained model
 # -----------------------------
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("mango_leaf_disease_model.h5")
+    # Try forcing compile=False
+    model = tf.keras.models.load_model(
+        "mango_leaf_disease_model.h5",
+        compile=False
+    )
     return model
 
 model = load_model()
@@ -314,3 +320,6 @@ unsafe_allow_html=True
 
 if __name__ == "__main__":
     main()
+
+
+

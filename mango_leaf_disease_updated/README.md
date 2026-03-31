@@ -39,7 +39,7 @@ Below is a sample run of the app
 
 ## Project Structure
 
-The project is organized as follows:
+The project is organized as follows:python -m streamlit run app.py
 
 ```
 Mango Leaf Disease Prediction/
@@ -59,4 +59,4 @@ To contribute:
 
 Feel free to contribute, report issues, or provide feedback. Happy coding!
 
-Hey coder use the command 'python -m streamlit run app.py' to run the python pj in critical situtation only !!!!!
+Hey coder use the command '' to run the python pj in critical situtation only !!!!!
